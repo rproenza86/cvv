@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="cvv" ng-controller="MenuCtrl as meta">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title>{{meta.arrayData.pageTitle}}</title>
+        <!-- Google Font -->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/font-awesome-4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css"> 
+        <link rel="stylesheet" href="assets/css/animations.css"> 
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/style-red.css" id="style-color">
+        <!-- Js -->
+        <script src="assets/js/modernizr.custom.js"></script>
+        <!-- AngularJS -->
+        <script src="app/bower_components/angular/angular.js"></script>
+        <script src="app/bower_components/angular-resource/angular-resource.js"></script>
+        <script src="app/js/app.js"></script>
+        <script src="app/js/controllers.js"></script>
+        <script src="app/js/directives.js"></script>
+    </head>
+    <body>
+
+
+        <!-- PRELOADER -->
+        <div class="preloader">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>    
+        <!-- end: PRELOADER  --> 
+
+
+        <!-- NAVIGATION -->
+        <nav role="navigation">
+            <!-- Logo -->
+            <a href="index.html" class="logo logo-img">
+                <img src="assets/img/logo-prosoft-white.png" class="img-responsive" alt="euforia">
+            </a>
+            <!-- end: Logo -->
+            <!-- Menu -->
+            <div class="navi-scroll">
+                <div class="navi-col">
+                    <ul class="menu">
+                        <li><a class="page-link" href="#home"><span data-hover="inicio">{{meta.arrayData.home}}</span><i class="fa fa-home"></i></a></li>
+                        <li><a class="page-link" href="#about"><span data-hover="acerca de mi">{{meta.arrayData.about}}</span><i class="fa fa-briefcase"></i></a></li>
+                        <li><a class="page-link" href="#services"><span data-hover="servicios">{{meta.arrayData.services}}</span><i class="fa fa-lightbulb-o"></i></a></li>
+                        <!--li><a class="page-link" href="#portfolio"><span data-hover="portafolio">portafolio</span><i class="fa fa-picture-o"></i></a></li-->
+                        <!--li><a class="page-link" href="#blog"><span data-hover="blog">blog</span><i class="fa fa-pencil"></i></a></li-->
+                        <li><a class="page-link" href="#contact"><span data-hover="contacto">{{meta.arrayData.contact}}</span> <i class="fa fa-phone"></i></a></li>
+                    </ul>  
+                </div><!-- .navi-col -->
+            </div><!-- .navi-scroll -->
+            <!-- end: Menu -->
+            <footer class="hidden-sm">
+                <ul class="social-icons">
+                    <li ng-repeat="network in meta.arrayData.networks track by $index">
+                        <a href="{{network.url}}" data-toggle="tooltip" data-placement="top" title="{{network.title}}"><i class="{{network.ico}}"></i></a>
+                    </li>
+                    <!--li><a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li-->
+                </ul>   
+                <div class="copyright">© {{meta.arrayData.year}} <a href="#">{{meta.arrayData.myName}}</a>.</div>
+            </footer>
+        </nav>
+        <!-- end: NAVIGATION -->   
+        
+        
+        <!-- PAGE-WRAPPER -->
+        <div class="page-wrapper">   
+
+            <!-- HOME Section --> 
+            <section id="home" class="page-activ" ng-controller="HomeCtrl as home">
+                <div class="content table home-bg">
+                    <div class="table-middle">
+
+                            <div class="intro-text">
+                                
+                                <h1>{{home.arrayData.range}} <span class="color-default">{{home.arrayData.name}}</span></h1>
+
+                                <div class="owl-carousel rotate-text">
+
+                                    <div class="item">
+                                        <h3><strong>{{home.arrayData.specialities[0][0]}}</strong> {{home.arrayData.specialities[0][1]}}</h3>
+                                    </div>
+                                    <div class="item">
+                                        <h3><strong>{{home.arrayData.specialities[1][0]}}</strong> {{home.arrayData.specialities[1][1]}}</h3>
+                                    </div>
+                                    <div class="item">
+                                        <h3><strong>{{home.arrayData.specialities[2][0]}}</strong> {{home.arrayData.specialities[2][1]}}</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div><!-- .intro-text -->
+
+                    </div><!-- .table-middle -->
+                </div><!-- .content --> 
+            </section>
+            <!-- end: HOME Section -->
+            
+            
+            <!-- ABOUT Section --> 
+            <section id="about" ng-controller="AboutCtrl as about">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1">
+                                
+                                <header>
+                                    <h3>{{about.arrayData.header[0].h3}} <small>{{about.arrayData.header[0].small}}</small></h3>
+                                    <h5>{{about.arrayData.header[0].h5}}</h5>
+                                </header>
+
+                                <!--  image & text -->
+                                <div class="row">
+                                    <div class="col-md-6 no-padding">
+                                        <img src="assets/img/about.jpg" class="img-responsive center-block img-thumbnail" alt="">
+                                    </div>
+                                    <div class="col-md-6 col-box bg-gray-light">
+                                        <div class="page-header">              
+                                            <h4>{{about.arrayData.pageHeader}}</h4>
+                                        </div>
+                                        <p>
+                                            {{about.arrayData.pagePresentation}}
+                                        </p>
+                                        <h7>
+                                            {{about.arrayData.pageIntroknowledge}}
+                                        </h7>
+
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"  ng-repeat="knowledge in about.arrayData.knowledges track by $index" ng-model="auxValue">
+
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading{{$index}}">
+                                                        <h4 class="panel-title">
+                                                            <a ng-class="{ collapsed : about.setAuxValue($index) }"  data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse{{$index}}">
+                                                               {{knowledge.title}}
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse{{$index}}" class="panel-collapse collapse" ng-class="{ in : !$index }"  role="tabpanel" aria-labelledby="heading{{$index}}">
+                                                        <div class="panel-body">
+                                                            <ul>
+
+                                                                <div ng-repeat="( key,elments ) in knowledge.value track by $index">
+
+                                                                    <div ng-show="knowledge.simple" >
+                                                                        <li> {{elments}} </li>
+                                                                    </div>
+
+                                                                    <div ng-show="{{knowledge.simple===0}}">
+                                                                        <li>
+                                                                            {{key}} :
+                                                                            <ul>
+                                                                                <div  ng-repeat="values in elments track by $index"   >
+                                                                                    <li> {{values}} </li>
+                                                                                </div>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                        </div>  
+                                        <h3 class="text-right color-white">{{about.arrayData.historia}}</h3>
+                                    </div>
+                                </div><!-- .row -->
+                                <div class="space30"></div>
+                                <!--  end: images & text -->
+                                
+
+                                <!-- testimonial & skills -->
+                                <div class="row">
+                                    
+                                    <!-- testimonial --> 
+                                    <div class="testimonial col-md-6 col-box bg-gray-light">
+                                        <div class="page-header">              
+                                            <h4>Validaciones LinkedIn</h4>
+                                        </div>
+                                        <div class="testimonial-item">
+                                            <article class="color-white">
+                                                <img class="pull-left img-circle" src="assets/img/testimonial/2.jpg" alt="Amy Johnson">
+                                                <p>Ha validado actitudes PHP, HTML5, CSS3, JavaScript, C++ y MYSQL... </p>
+                                                <div class="meta">
+                                                    <h6 class="name small">Maikel Kwao <!--a href="#">sitename.com</a--></h6>
+                                                </div><!-- .meta -->
+                                            </article>
+                                        </div><!-- .testimonial-item -->
+                                        <div class="testimonial-item">
+                                            <article class="color-white">
+                                                <img class="pull-left img-circle" src="assets/img/testimonial/1.jpg" alt="John Doe">
+                                                <p>Ha validado actitudes PHP, HTML5, CSS3, JavaScript, C++ y MYSQL... </p>
+                                                <div class="meta">
+                                                    <h6 class="name small">Amaury Viera <!--a href="#">sitename.com</a--></h6>
+                                                </div><!-- .meta -->
+                                            </article>
+                                        </div><!-- .testimonial-item -->
+                                        <h2 class="text-right color-white text-uppercase">validado</h2>
+                                    </div>
+                                    <!-- end: testimonial -->
+                                    
+                                    <!-- skills -->
+                                    <div class="skills col-md-6 col-box">
+                                        <div class="page-header">              
+                                            <h4>{{about.arrayData.aptitudes['h4']}}</h4>
+                                        </div>
+                                        <ul class="list-unstyled"   ng-repeat="(aptitud,porciento) in about.arrayData.aptitudes['value'] track by $index">
+
+                                            <li>
+                                                <div class="progress" style="width:{{porciento}}">
+                                                    <div class="progress-percent">{{porciento}}</div>
+                                                </div>
+                                                <span>{{aptitud}}</span>
+                                            </li>
+
+                                        </ul>
+                                        <h3 class="text-right color-gray-light">{{about.arrayData.aptitudes['habilidades']}}</h3>
+                                    </div>
+                                    <!-- end: skills -->
+                                    
+                                </div><!-- .row -->
+                                <!-- end: testimonial & skills -->
+
+
+                                <!-- achivements -->
+                                <div class="achivement row"  >
+
+                                    <div class="achivement-box col-sm-3 col-box"    ng-repeat="achivement in about.arrayData.achivement track by $index">
+                                        <i class="{{achivement.ico}}"></i>
+                                        <h5 class="name">{{achivement.name}} </h5>
+                                        <span class="count">{{achivement.count}}</span>
+                                    </div>
+
+                                </div>
+                                <!-- end: achivements -->
+                                
+                                
+                                <div class="space30"></div>
+
+                            
+                                <!-- timeline -->
+                                <div class="timeline">
+                                    <div class="page-header">              
+                                        <h4>{{about.arrayData.eduTrabajos['titulo']}}</h4>
+                                    </div>   
+                                    <ul class="timeline-list">
+                                        <li ng-repeat="trabajo in about.arrayData.eduTrabajos['trabajos'] track by $index">
+                                            <div class="tl-date">
+                                                <span>{{trabajo.date1}}</span>
+                                                <span>{{trabajo.date2}}</span>
+                                            </div>
+                                            <span class="tl-icon hidden-xs fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x color-default"></i>
+                                                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <div class="tl-box anim-shadow">
+                                                <h5 class="title">{{trabajo.title}}</h5>
+                                                <p ng-bind-html="trabajo.body"></p>
+                                            </div>
+                                        </li>
+                                        <!--li>
+                                            <div class="tl-date">
+                                                <span>01/05/12 - 31/03/13</span>
+                                                <span>2012 - 2013</span>
+                                            </div>
+                                            <span class="tl-icon hidden-xs fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x color-default"></i>
+                                                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <div class="tl-box anim-shadow">
+                                                <h5 class="title">Jefe de Seguridad Informática en Ibero Star Parque Central</h5>
+                                                <p>
+                                                    Estudio y análisis de riesgos y vulnerabilidades físicas y lógicas de competencia informáticas, elaborar,
+                                                    implementar medidas que erradicaran o minimizaran los riesgos detectados así como controlar el
+                                                    cumplimiento y grado de efectividad de estas medidas plasmando todo esto en un Plan de Seguridad
+                                                    Informática. Supervisar el correcto funcionamiento de los servicios, servidores y demás equipamientos de
+                                                    redes enfocados en la seguridad informática y sus buenas prácticas; proponer nuevas soluciones tecnológicas
+                                                    que mejoren en eficiencia y eficacia el desempeño del grupo hotelero.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tl-date">
+                                                <span>16/03/11 - 24/04/12</span>
+                                                <span>2011 - 2012</span>
+                                            </div>
+                                            <span class="tl-icon hidden-xs fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x color-default"></i>
+                                                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <div class="tl-box anim-shadow">
+                                                <h5 class="title">Jefe de Informática y Comunicaciones Cifradas en RM Mayabeque</h5>
+                                                <p>
+                                                    Estudio y análisis de riesgos y vulnerabilidades físicas y lógicas de competencia informáticas, elaborar,
+                                                    implementar medidas que erradicaran o minimizaran los riesgos detectados así como controlar el
+                                                    cumplimiento y grado de efectividad de estas medidas plasmando todo esto en un Plan de Seguridad
+                                                    Informática. Supervisar el correcto funcionamiento de los servicios, servidores y demás equipamientos de
+                                                    redes enfocados en la seguridad informática y sus buenas prácticas; proponer e implementar nuevas soluciones tecnológicas
+                                                    acordes con los avances mundiales en la especialidad.
+                                                </p>
+                                                <p>
+                                                    Trabaje con tecnologías de virtualización, en la instalación, configuración y administración de servidores 
+                                                    de dominio, de nombres de dominio, de direcciones dinámicas, servidores de correo, servidores de mensajería 
+                                                    instantánea, servidores de transferencias de ficheros, servidores web, de bases de datos, servidores de comunicación
+                                                    cifrada, servidores firewall, servidores de telefonía digital y tecnología VoIp, servidores de clientes ligeros,
+                                                    servidores de streaming de audio y de vídeo, televisión, así como servidores de áreas de almacenamiento en la red,
+                                                    Torrens y NFS.
+                                                </p>
+                                                <p>
+                                                    Participe en la instalación, configuración y administración de servidores de clientes ligeros y 
+                                                    despliegue de sus terminales, así como en el diseño topológico y montaje del cableado estructurado 
+                                                    de las redes privadas físicas|virtuales y la configuración y despliegue de los equipos de 
+                                                    interconectividad como routers, switchs, IAD y módems.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tl-date">
+                                                <span>01/10/09 - 10/03/11</span>
+                                                <span>2009 - 2012</span>
+                                            </div>
+                                            <span class="tl-icon hidden-xs fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x color-default"></i>
+                                                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <div class="tl-box anim-shadow">
+                                                <h5 class="title">"Especialista A" de Sistemas Automatizados Centro de Datos CPA EM EO</h5>
+                                                <p>
+                                                    Administración red en Centro de Dato:
+                                                    <ol>
+                                                        <li>Instalación, configuración y administración de  infraestructura de virtualización 
+                                                            <ol>
+                                                                <li>ESXi</li>
+                                                                <li>Xen Citrix</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Administración de servidores y clientes soportados por sistemas operativos GNU/LINUX y Windows
+                                                            <ol>
+                                                                <li>Windows Server 2003,2008</li>
+                                                                <li>Windows XP,Vista</li>
+                                                                <li>Gentoo</li>
+                                                                <li>Ubuntu</li>
+                                                                <li>Debian</li>
+                                                                <li>OpenSuse</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Servicios
+                                                            <ol>
+                                                                <li>Directorio Activo.</li>
+                                                                <li>Mensajería instantánea y Voip : Lync Server y Openfire</li>
+                                                                <li>Correo : Microsoft Exchange Server y MDaemon</li>
+                                                                <li>Sistema de transmisión de ficheros (Ftp)</li>
+                                                                <li>Servidor de nombres de dominio DNS, Bind9</li>
+                                                                <li>Sistema contable financiero: Gestware,Assets Premium</li>
+                                                                <li>Gestión Documental: AvilaDoc</li>
+                                                                <li>Bases de datos : Sql Server, Postgresql Server,MySQL,ADVANTAGE</li>
+                                                                <li>Servidor web : Microsoft IIS, Apache, XAMP, WAMP</li>
+                                                                <li>Configuración y gestión de equipos de conectividad de fabricantes Cisco,Huawei, TP-Link y ZTE</li>
+                                                                    <ol>
+                                                                        <li>Dispositivos de Acceso Integrado (IAD)</li>
+                                                                        <li>Router</li>
+                                                                        <li>CX-Router</li>
+                                                                        <li>Switch</li>
+                                                                        <li>Módem</li>
+                                                                    </ol>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tl-date">
+                                                <span>18/10/04 - 25/07/09</span>
+                                                <span>2004 - 2009</span>
+                                            </div>
+                                            <span class="tl-icon hidden-xs fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x color-default"></i>
+                                                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <div class="tl-box anim-shadow">
+                                                <h5 class="title">Universidad de las Ciencias informáticas</h5>
+                                                <p>
+                                                    Forme parte del proyecto Portales, en la UCI, por período de un año, durante el 3º curso de la universidad, desempeñando el rol de programador en los lenguajes PHP, C++ y C#. Como resultados más relevantes del proyecto se obtuvo el Portal UCI, el Directorio de estudiantes y trabajadores UCI y el Directorio telefónico UCI.
+                                                </p>
+                                                <p>
+                                                    Integre el equipo de trabajo del proyecto Planificación por objetivos del UCID por medio año en el 4º curso de la carrera, desempeñando el rol de programador, usando las tecnologías PHP, JavaScript y JavaScriptExtreme. Del proyecto se obtuvo el portal Planificación por Objetivos usado en las FAR para el apoyo de tomas de decisiones de los jefes y oficiales.
+                                                </p>
+                                                <p>
+                                                    Trabaje en el proyecto ERP (Planificación de Recursos Empresariales), concretamente en la línea de Planificación, dirigido por la UCI y el UCID, por período de año y medio en los cursos 4º y 5º año de la carrera respectivamente , desempeñando el rol de programador y analista de sistemas, seguidamente administrador y diseñador de bases de datos,  y finalmente arquitecto de sistemas, trabajando con las tecnologías PHP, JavaScript y JavaScriptExtreme, así como el ORM Doctrine para la interacción con la base de datos. Actualmente el proyecto continúa su desarrollo y se encuentra en explotación experimental en todas las unidades militares del MINFAR y buen número de entidades cubanas, este producto es distribuido bajo el nombre de Conmat ó Cedrux.
+                                                </p>
+                                                <p>
+                                                    Durante el transcurso de la carrera desde el 2º hasta el 5º año fue alumno ayudante de cátedra de la asignatura de Programación, </p>
+                                                </p>
+                                            </div>
+                                        </li-->
+                                    </ul><!-- .timeline-list -->
+                                </div>
+                                <!-- end: timeline -->
+                                
+                                
+                            </div><!-- .col-lg-10 --> 
+                        </div><!-- .row -->
+                    </div><!-- .container-fluid -->
+                </div><!-- .content --> 
+            </section>
+            <!-- end: ABOUT Section --> 
+            
+            
+            <!-- SERVICES Section --> 
+            <section id="services" ng-controller="ServicesCtrl as services">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1">
+
+                                <header>
+                                    <h3>{{services.arrayData.header[0].h3}}<small>{{services.arrayData.header[0].small}}</small></h3>
+                                    <h5>{{services.arrayData.header[0].h5}}</h5>
+                                </header>
+
+                                <!-- features -->
+                                <div class="fatures row">
+                                    <div class="col-md-4 col-box item anim-shadow" ng-repeat="feature in services.arrayData.features track by $index">
+                                    <!-- .item -->
+                                        <div class="ft-icon">
+                                            <i class="{{feature.ico}}"></i>
+                                        </div>
+                                        <h5>{{feature.h5}}</h5>
+                                        <p>{{feature.p}}</p>
+                                        <!--a href="">{{feature.a}}</a-->
+                                    </div>
+                                   <!-- .item -->
+                                </div>
+                                <!-- end: fatures -->
+
+                                <div class="space100 hidden-sm hidden-xs"></div> 
+
+                                <div class="row relative bg-img-black">
+                                    <div class="col-md-7 padding30">
+                                        <div class="page-header">                   
+                                            <h3 class="color-white"><strong>{{services.arrayData.responsive[0].strong}}</strong></h3>
+                                        </div>
+                                        <ul class="list-unstyled list-main color-gray-light" ng-repeat="value in services.arrayData.responsive[0].values track by $index">
+
+                                            <li><i class="fa fa-fw fa-check fa-lg color-default"></i> {{value[0]}} <strong>{{value[1]}}</strong> {{value[2]}}</li>
+
+                                        </ul>
+                                    </div>
+                                    <img src="assets/img/services01.png" class="services-img01 img-responsive col-sm-6 hidden-xs" alt="Image">
+                                </div><!-- .row -->
+
+                                <div class="space100 hidden-sm hidden-xs"></div> 
+
+                                <div class="row">
+                                    <div class="col-md-6 col-box bg-white no-padding">
+                                        <img src="assets/img/services03.jpg" class="img-responsive" alt="Image">
+                                    </div><!-- .col -->
+                                    <div class="col-md-6 col-box bg-gray-light">
+                                        <div class="page-header">                   
+                                            <h4>{{services.arrayData.tiendas["title"]}}</h4>
+                                        </div>
+                                        <p class="lead">
+                                            {{services.arrayData.tiendas["body"]}}
+                                        </p>
+                                        <h2 class="text-right color-white text-uppercase">{{services.arrayData.tiendas["footer"]}}</h2>
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+
+                                <div class="space50"></div> 
+
+                                <div class="row">
+                                    <div class="col-md-6 col-box bg-gray-light">
+                                        <div class="page-header">                   
+                                            <h4>    {{services.arrayData.desarrollo["title"]}}  </h4>
+                                        </div>
+                                        <div>
+                                            <p> {{services.arrayData.desarrollo["body"]}} </p>
+                                        </div>
+
+                                        <div class="info-blocks"    ng-repeat="job in services.arrayData.desarrollo['details'] track by $index">
+
+                                            <i class="icon-info-blocks fa fa-lightbulb-o"></i>
+                                            <div class="info-blocks-in">
+
+                                                <h6>{{job}}</h6>
+
+                                                <p></p>
+                                            </div>
+
+                                        </div>
+
+                                        <h2 class="text-right color-white text-uppercase"> {{services.arrayData.desarrollo["footer"]}} </h2>
+                                    </div><!-- .col -->
+                                    <div class="col-md-6 col-box no-padding">
+                                        <img src="assets/img/services02.jpg" class="img-responsive" alt="Image">
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+
+                                <div class="space30"></div> 
+
+                            </div><!-- .col-lg-10 --> 
+                        </div><!-- .row -->
+                    </div><!-- .container-fluid -->
+                </div><!-- .content --> 
+            </section>
+            <!-- end: SERVICES Section --> 
+                   
+
+            <!-- PORTFOLIO Section --> 
+            <section id="portfolio">
+                <div class="content">
+                     <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1">
+                                                              
+                                <header>
+                                    <h3>Mi Portafolio<small>Portafolio</small></h3>
+                                    <h5>Mis mejores trabajos</h5>
+                                </header>
+                                
+
+
+                            </div><!-- .col-lg-10 --> 
+                        </div><!-- .row -->
+                    </div><!-- .container-fluid -->
+                </div><!-- .content --> 
+            </section>
+            <!-- end: PORTFOLIO Section --> 
+            
+            <!-- CONTACT Section --> 
+            <section id="contact"   ng-controller="ContactCtrl as contact">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1">
+
+                                <header>
+                                    <h3>{{contact.arrayData.header[0].h3}}<small>{{contact.arrayData.header[0].small}}</small></h3>
+                                    <h5>{{contact.arrayData.header[0].h5}}</h5>
+                                </header>
+
+                                <div class="row">
+                                    <!-- contact-details -->
+                                    <div class="col-sm-6 contact-details">
+                                        <div class="page-header">
+                                            <h4 class="color-black">{{contact.arrayData.details.title}}</h4>
+                                        </div>
+                                        <p>{{contact.arrayData.details.body}}</p>
+                                        <address>
+                                            <p>
+                                                <i class="fa fa-fw fa-home pull-left"></i>
+                                                <span>
+                                                    <strong class="small">{{contact.arrayData.details.details[0]["title"]}}</strong>
+                                                    <br>{{contact.arrayData.details.details[0].body}}
+                                                </span> 
+                                            </p>
+                                            <p>
+                                                <i class="fa fa-fw fa-phone pull-left"></i>
+                                                <span>
+                                                    <strong class="small">{{contact.arrayData.details.details[1]["title"]}}</strong>
+                                                    <br>{{contact.arrayData.details.details[1]["body"]}}
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <i class="fa fa-fw fa-envelope-o pull-left"></i> 
+                                                <span>
+                                                    <strong class="small">{{contact.arrayData.details.details[2]["title"]}}</strong>
+                                                    <br>{{contact.arrayData.details.details[2]["body"]}}
+                                                </span>
+                                            </p>
+                                        </address>
+                                        <div class="page-header">
+                                            <h4 class="color-black">{{contact.arrayData.socials.title}}</h4>
+                                        </div>
+                                        <ul class="social-icons social-v3">
+                                            <li ng-repeat="network in contact.arrayData.socials.networks track by $index">
+
+                                                <a href="{{network.url}}" data-toggle="tooltip" data-placement="top" title="{{network.title}}"><i class="{{network.ico}}"></i></a>
+
+                                            </li>
+                                            <!--li><a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a></li-->
+                                        </ul>
+                                        <div class="space30"></div>
+                                    </div>
+                                    <!-- end: .contact details -->
+                                    
+                                    <!-- contact-form -->
+                                    <div class="col-sm-6 col-box bg-gray-light contact-form">
+                                        <div class="page-header">
+                                            <h4 class="color-black">{{contact.arrayData.form.title }}</h4>
+                                        </div>
+                                        <!-- 
+                                              IMPORTANT: change the email address at the top of the contact.php 
+                                                        file to the email address that you want this form to send to 
+                                        -->
+                                        <form id="contact-valid-form" class="form-style" action="contact.php" method="POST" role="form">
+                                            <div class="form-group">
+                                                <input type="text" class="text-field form-control field-validation required" data-validation-type="string" id="form-name" placeholder="{{contact.arrayData.form.nombre }}" name="name" />
+                                                <i class="form-icon fa fa-user"></i>
+                                            </div>  
+                                            <div class="form-group">
+                                                <input type="email" class="text-field form-control field-validation required" data-validation-type="email" id="form-email" placeholder="{{contact.arrayData.form.direccion }}" name="email" />
+                                                <i class="form-icon fa fa-envelope"></i>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="text-field form-control field-validation phone" data-validation-type="phone" id="form-contact-number" placeholder="{{contact.arrayData.form.numero }}" name="contact_number" />
+                                                <i class="form-icon fa fa-phone"></i>
+                                            </div> 
+                                            <div class="form-group">
+                                                <textarea placeholder="{{contact.arrayData.form.msg }}" class="form-control field-validation required" name="message"></textarea>
+                                                <i class="form-icon fa fa-comment"></i>
+                                            </div> 
+                                            <div class="form-group submit">
+                                                <span class="form-loader"><i class="fa fa-spinner fa-spin"></i></span>
+                                                <button type="submit" class="btn btn-default">{{contact.arrayData.form.btnSend }}</button>
+                                            </div>  
+                                            <div class="alert-validate-form"></div>
+                                        </form>
+                                    </div>
+                                    <!-- end: .contact-form -->
+                                </div><!-- .row -->
+                                
+
+                            </div><!-- .col-lg-10 --> 
+                        </div><!-- .row -->
+                    </div><!-- .container-fluid -->
+                </div><!-- .content --> 
+            </section>
+            <!-- end: CONTACT Section --> 
+            
+
+            <!-- PAGE-AJAX Section --> 
+            <section id="page-ajax">
+                <h1>Not Found</h1>
+            </section>
+            <!-- end: PAGE-AJAX Section --> 
+                       
+            
+        </div>
+        <!-- end: PAGE-WRAPPER -->
+        
+        
+        <!-- PLUGIN SCRIPTS -->
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.hoverdir.js"></script>
+        <script src="assets/js/functions.js"></script>
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+</html>

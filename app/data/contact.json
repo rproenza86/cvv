@@ -1,0 +1,58 @@
+{
+  "header": [
+    {
+      "h3": "Contácteme",
+      "small": "Contacto",
+      "h5": "entrar en contacto"
+    }
+  ],
+  "details":{
+    "title":"Entrar en contacto",
+    "body":"Contactar para obtener un servicio de calidad y elevada profesionalidad",
+    "details":[
+      {
+        "title":"DIRECCION:",
+        "body":"Diego de Atienza Oe3-25 y Versalles, Quito, Pichincha, Ecuador",
+        "ico":"fa fa-fw fa-home pull-left"
+      },
+      {
+        "title":"MÓVIL:",
+        "body":"(+593) 958996049",
+        "ico":"fa fa-fw fa-phone pull-left"
+      },
+      {
+        "title":"E-MAIL:",
+        "body":"rproenza86@gmail.com",
+        "ico":"fa fa-fw fa-envelope-o pull-left"
+      }
+    ]
+  },
+  "socials":{
+    "title":"Link Sociales",
+    "networks":[
+      {
+        "url":"https://www.facebook.com/raul.rodriguezproenza",
+        "title": "Facebook",
+        "ico": "fa fa-facebook"
+      },
+      {
+        "url":"https://twitter.com/rproenza86",
+        "title": "Twitter",
+        "ico": "fa fa-twitter"
+      },
+      {
+        "url":"https://www.linkedin.com/pub/raúl-rodríguezproenza/65/255/208",
+        "title": "Linkedin",
+        "ico": "fa fa-linkedin"
+      }
+    ]
+  },
+  "form":{
+    "title": "Formulario de contacto",
+    "btnSend" : "Enviar mensaje",
+    "nombre":"Nombre completo",
+    "direccion":"Dirección de correo",
+    "numero":"Número de contacto",
+    "msg":"Mensaje..."
+  }
+}

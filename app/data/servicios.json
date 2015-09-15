@@ -1,0 +1,73 @@
+{
+  "header": [
+    {
+      "h3": "Mis Servicios",
+      "small": "Servicios",
+      "h5": "Que puedo hacer"
+    }
+  ],
+  "features": [
+    {
+      "ico": "pe-7s-cart",
+      "h5": "Desarrollo y aplicaciones web",
+      "p": "Desarrollo proyectos adaptados a las necesidades del cliente. Creo aplicaciones nuevas o integradas dentro de sistemas de información que el cliente ya utiliza.",
+      "a": "leer mas..."
+    },
+    {
+      "ico": "pe-7s-monitor",
+      "h5": "Responsive Design",
+      "p": "Creo páginas Web con una estructura fluida y adaptable al tamaño de la pantalla en la que se visualice.",
+      "a": "leer mas..."
+    },
+    {
+      "ico": "pe-7s-unlock",
+      "h5": "Accesibilidad web y usabilidad",
+      "p": "Aseguro el acceso a los contenidos y funcionalidades de una página web garantizando la facilidad de uso sin aprendizaje previo sin perder la frescura, innovación y arte de un cuidado diseño .",
+      "a": "leer mas..."
+    }
+  ],
+  "responsive": [
+    {
+      "strong": "Responsive Design",
+      "values": [
+        [
+          "Compatible en",
+          "computadoras",
+          "100% adaptables"
+        ],
+        [
+          "Compatible en",
+          "laptop",
+          "100% adaptables"
+        ],
+        [
+          "Compatible en",
+          "tablet",
+          "100% adaptables"
+        ],
+        [
+          "Compatible en",
+          "smartphone",
+          "100% adaptables"
+        ]
+      ]
+    }
+  ],
+  "tiendas":  {
+    "title": "Tiendas online",
+    "body":"Convino atractivos diseños, imágenes de calidad de los productos,       facilidad de navegación y procesos sencillos de compra, proporcionando      ingredientes de éxito a su tienda online. ",
+    "footer":"E-Commerce"
+  },
+  "desarrollo":{
+    "title":"Desarrollo de aplicaciones de gestión corporativas",
+    "body":"Desarrollo aplicaciones corporativas con garantía de calidad que gestionan y administran todas las actividades    de su empresa o comercio que sirven de apoyo en las tareas organizativas y le permiten    un toma oportuna de decisiones.",
+    "details":[
+      "Diseño de la Intranet",
+      "Definición de roles y usos",
+      "Desarrollo de servicios electrónicos",
+      "Integración de procesos de negocio",
+      "Integración de otros sistemas de la empresa a través de webservices, acceso a bases de datos, mensajería, Ajax, etc"
+    ],
+    "footer":"Gestión"
+  }
+}

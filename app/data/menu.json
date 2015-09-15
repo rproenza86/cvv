@@ -1,0 +1,26 @@
+{
+  "pageTitle":"PROSOFT - Portafolio",
+  "home":"inicio",
+  "about":"acerca de mi",
+  "services":"servicios",
+  "contact":"contacto",
+  "myName":"Raúl R.Proenza",
+  "year": "2015",
+  "networks":[
+    {
+      "url":"https://www.facebook.com/raul.rodriguezproenza",
+      "title": "Facebook",
+      "ico": "fa fa-facebook"
+    },
+    {
+      "url":"https://twitter.com/rproenza86",
+      "title": "Twitter",
+      "ico": "fa fa-twitter"
+    },
+    {
+      "url":"https://www.linkedin.com/pub/raúl-rodríguezproenza/65/255/208",
+      "title": "Linkedin",
+      "ico": "fa fa-linkedin"
+    }
+  ]
+}

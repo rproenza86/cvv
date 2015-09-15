@@ -1,0 +1,180 @@
+{
+  "header": [
+  {
+    "h3": "acerca de mi",
+    "small": "acerca de mi",
+    "h5": "r.proenza, ingeniero en ciencias informáticas"
+  }
+],
+  "pageHeader": "Hola, soy Raúl",
+  "pagePresentation": "Programador desde el 2009 hasta la actualidad especializado en desarrollo de aplicaciones web usando PHP basadas en la tecnología LAMP y .NET.",
+  "pageIntroknowledge": "Metodologías, tecnologías, lenguajes de programación y otras herramientas de desarrollos dominados:",
+  "knowledges": [
+    {
+      "simple": 1,
+      "title": "Lenguajes de programación dominados:",
+      "value": [
+        "C++",
+        "PHP",
+        "C#",
+        "Java",
+        "Bash"
+      ]
+    },
+    {
+      "simple": 0,
+      "title": "Domino los framework:",
+      "value": {
+        "PHP": [
+          "Yii",
+          "CodeIgniter",
+          "Symfony2"
+        ],
+        "Javascript": [
+          "JQuery",
+          "JQuery UI",
+          "AngularJS",
+          "Sencha ExtJS, Touch"
+        ],
+        "CSS": [
+          "Bootstrap3",
+          "Bootstrap4"
+        ],
+        "Microsoft": [
+          ".NET"
+        ]
+      }
+    },
+    {
+      "simple": 1,
+      "title": "Gestores de Bases de Datos:",
+      "value": [
+        "SQL",
+        "ORACLE",
+        "MYSQL",
+        "POSTGRESQL",
+        "ADVANTAGE"
+      ]
+    },
+    {
+      "simple": 1,
+      "title": "Mapeo de objeto-relacional (ORM):",
+      "value": [
+        "Doctrine",
+        "ROcks",
+        "Prosoft ORM"
+      ]
+    },
+    {
+      "simple": 1,
+      "title": "Sistema de gestión de contenidos (CMS):",
+      "value": [
+        "Joomla",
+        "Wordpress",
+        "Drupal"
+      ]
+    },
+    {
+      "simple": 1,
+      "title": "Metodologías de Desarrollo de Software:",
+      "value": [
+        "Rational Unified Process",
+        "SCRUM",
+        "eXtreme Programming (XP)",
+        "Agile Modeling"
+      ]
+    },
+    {
+      "simple": 1,
+      "title": "Herramientas de modelado:",
+      "value": [
+        "Visual Paradigm",
+        "Rational Rose"
+      ]
+    },
+    {
+      "simple": 0,
+      "title": "Sistemas operativos:",
+      "value": {
+        "Microsoft Windows": [
+          "Windows Server 2003, 2008 R2, 2012, 2013",
+          "Windows Seven",
+          "Windows 8.1",
+          "Windows 10"
+        ],
+        "GNU/Linux ": [
+          "Debian",
+          "Ubuntu",
+          "Gentoo",
+          "OpenSuse"
+        ]
+      }
+    }
+  ],
+  "historia": "MI HISTORIA",
+  "aptitudes": {
+    "h4": "Aptitudes destacadas",
+    "habilidades": "HABILIDADES",
+    "value": {
+      "HTML5": "90%",
+      "CSS3": "80%",
+      "JAVASCRIPT": "90%",
+      "BOOTSTRAP": "90%",
+      "PHP": "90%",
+      "SQL": "80%"
+    }
+  },
+  "achivement": [
+    {
+      "ico": "pe-7s-alarm color-white",
+      "name": "trabajos terminados",
+      "count": 83
+    },
+    {
+      "ico": "pe-7s-alarm color-white",
+      "name": "clientes satisfechos",
+      "count": 51
+    },
+    {
+      "ico": "pe-7s-coffee pe-va",
+      "name": "café consumido",
+      "count": "2,002"
+    },
+    {
+      "ico": "pe-7s-like2 color-white",
+      "name": "tickets resueltos",
+      "count": "196"
+    }
+  ],
+  "eduTrabajos": {
+    "titulo":"Educación & Trabajos",
+    "trabajos":[
+      {
+        "date1": "01/03/13 - 16/04/15",
+        "date2": "2013 - 2015",
+        "title": "Consultor como Especialista Superior Infocomunicaciones en la Corporación Antillana Exportadora Antex S.A.",
+        "body": "<p>Gestión y administración de las redes, Centro de Datos de la corporación. Diseño,desarrollo y despliegue de los Sistemas de Gestión integral de cooperantes \"SCAT II\", \"Gestión reportes e interrupciones\" y \"Gestión de contratos nacionales\". </p> <p> Trabaja con tecnologías de virtualización, servidores de dominio, de nombres de dominio, de direcciones dinámicas, servidores de correo, servidores de mensajería instantánea y VoIp, servidores de transferencias                  de ficheros, servidores web, de bases de datos, servidores firewall, proxy web.                  </p>                  <p>                  Trabajado con los CMS Joomla creando portales para la corporación.                  </p>                  <p>                  Configuro y gestiono la VPN mixta por hardware y software de la corporación entre los diferentes locaciones                  de la corporación en Cuba y Angola.                  </p>                  <p>                  Doy soporte técnico a los sistemas informáticos de la corporación.                  </p>"
+      },
+      {
+        "date1": "01/05/12 - 31/03/13",
+        "date2": "2012 - 2013",
+        "title": "Jefe de Seguridad Informática en Ibero Star Parque Central",
+        "body":"<p>Estudio y análisis de riesgos y vulnerabilidades físicas y lógicas de competencia informáticas, elaborar,implementar medidas que erradicaran o minimizaran los riesgos detectados así como controlar el cumplimiento y grado de efectividad de estas medidas plasmando todo esto en un Plan de Seguridad        Informática. Supervisar el correcto funcionamiento de los servicios, servidores y demás equipamientos de       redes enfocados en la seguridad informática y sus buenas prácticas; proponer nuevas soluciones tecnológicas        que mejoren en eficiencia y eficacia el desempeño del grupo hotelero.        </p>"
+      },
+      {
+        "date1": "16/03/11 - 24/04/12",
+        "date2": "2011 - 2012",
+        "title": "Jefe de Informática y Comunicaciones Cifradas en RM Mayabeque",
+        "body":"<p>        Estudio y análisis de riesgos y vulnerabilidades físicas y lógicas de competencia informáticas, elaborar,        implementar medidas que erradicaran o minimizaran los riesgos detectados así como controlar el        cumplimiento y grado de efectividad de estas medidas plasmando todo esto en un Plan de Seguridad        Informática. Supervisar el correcto funcionamiento de los servicios, servidores y demás equipamientos de        redes enfocados en la seguridad informática y sus buenas prácticas; proponer e implementar nuevas soluciones tecnológicas        acordes con los avances mundiales en la especialidad.        </p>        <p>        Trabaje con tecnologías de virtualización, en la instalación, configuración y administración de servidores        de dominio, de nombres de dominio, de direcciones dinámicas, servidores de correo, servidores de mensajería        instantánea, servidores de transferencias de ficheros, servidores web, de bases de datos, servidores de comunicación        cifrada, servidores firewall, servidores de telefonía digital y tecnología VoIp, servidores de clientes ligeros,        servidores de streaming de audio y de vídeo, televisión, así como servidores de áreas de almacenamiento en la red,        Torrens y NFS.        </p>        <p>        Participe en la instalación, configuración y administración de servidores de clientes ligeros y        despliegue de sus terminales, así como en el diseño topológico y montaje del cableado estructurado        de las redes privadas físicas|virtuales y la configuración y despliegue de los equipos de        interconectividad como routers, switchs, IAD y módems.        </p>"
+      },
+      {
+        "date1": "01/10/09 - 10/03/11",
+        "date2": "2009 - 2012",
+        "title": "\"Especialista A\" de Sistemas Automatizados Centro de Datos CPA EM EO",
+        "body":"<p>        Administración red en Centro de Dato:        <ol>        <li>Instalación, configuración y administración de  infraestructura de virtualización        <ol>        <li>ESXi</li>        <li>Xen Citrix</li>        </ol>        </li>        <li>Administración de servidores y clientes soportados por sistemas operativos GNU/LINUX y Windows        <ol>        <li>Windows Server 2003,2008</li>        <li>Windows XP,Vista</li>        <li>Gentoo</li>        <li>Ubuntu</li>        <li>Debian</li>        <li>OpenSuse</li>        </ol>        </li>        <li>Servicios        <ol>        <li>Directorio Activo.</li>        <li>Mensajería instantánea y Voip : Lync Server y Openfire</li>        <li>Correo : Microsoft Exchange Server y MDaemon</li>        <li>Sistema de transmisión de ficheros (Ftp)</li>        <li>Servidor de nombres de dominio DNS, Bind9</li>        <li>Sistema contable financiero: Gestware,Assets Premium</li>        <li>Gestión Documental: AvilaDoc</li>        <li>Bases de datos : Sql Server, Postgresql Server,MySQL,ADVANTAGE</li>        <li>Servidor web : Microsoft IIS, Apache, XAMP, WAMP</li>        <li>Configuración y gestión de equipos de conectividad de fabricantes Cisco,Huawei, TP-Link y ZTE</li>        <ol>        <li>Dispositivos de Acceso Integrado (IAD)</li>        <li>Router</li>        <li>CX-Router</li>        <li>Switch</li>        <li>Módem</li>        </ol>        </ol>        </li>        </ol>        </p>"
+      }
+    ]
+  }
+
+
+}

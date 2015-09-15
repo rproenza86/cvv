@@ -1,0 +1,368 @@
+<!-- THEME OPTIONS  -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-2"></head><body><div class="style-switcher hidden-xs">
+    <div class="body-switcher">
+      
+        <div class="icon-switcher">
+            <i class="fa fa-lg fa-gears"></i>
+        </div>        
+        <div class="header-switcher">
+            <p class="lead">STYLE SWITCHER</p>
+        </div>        
+        <div class="panel-group" id="acd-switcher" role="tablist" aria-multiselectable="true">
+            <div class="panel">
+                <div class="panel-heading border-top" role="tab" id="h-color">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#acd-switcher" href="#c-color" aria-expanded="true" aria-controls="c-color">
+                            colors &amp; background
+                        </a>
+                    </h4>
+                </div>
+                <div id="c-color" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h-color">
+                    <div class="panel-body">
+                        
+                        <div class="box-switcher box-color color-selector">
+                            <h6>- Color selector:</h6>  
+                            <a onclick="switcher_color('blue')" class="bg-blue">blue</a>
+                            <a onclick="switcher_color('red')" class="bg-red">red</a>
+                            <a onclick="switcher_color('orange')" class="bg-orange">orange</a>
+                            <a onclick="switcher_color('yellow')" class="bg-yellow">yellow</a><br>
+                            <a onclick="switcher_color('green')" class="bg-green">green</a>
+                            <a onclick="switcher_color('purple')" class="bg-purple">purple</a>
+                            <a onclick="switcher_color('navy')" class="bg-navy">navy</a>
+                            <a onclick="switcher_color('gray')" class="bg-gray">gray</a>
+                            <a onclick="switcher_color('dark')" class="bg-dark">dark</a>
+                            <a onclick="switcher_color('black')" class="bg-black">black</a>
+                        </div>
+
+                        <div class="box-switcher box-color bg-nav">
+                            <h6>- Background navigation:</h6>
+                            <a onclick="switcher_bg_nav('nav-white')" class="nav-white bg-white">white</a>
+                            <a onclick="switcher_bg_nav('nav-graylight')" class="nav-graylight bg-gray-light">gray-light</a>
+                            <a onclick="switcher_bg_nav('nav-dark')" class="nav-dark bg-dark">dark</a>
+                            <a onclick="switcher_bg_nav('nav-black')" class="nav-black bg-black">black</a>
+                        </div>
+
+                        <div class="box-switcher box-color bg-page">
+                            <h6>- Background content page:</h6>
+                            <a onclick="switcher_bg_page('page-white')" class="bg-white page-white">white</a>
+                            <a onclick="switcher_bg_page('page-gray-light')" class="bg-gray2 page-gray-light">gray-light</a>
+                            <a onclick="switcher_bg_page('page-dark')" class="bg-dark page-dark">gray-dark</a>
+                            <a onclick="switcher_bg_page('page-metalic')" class="bg-metalic page-metalic">metalic gradient</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#acd-switcher" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Logo
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+
+                        <div class="box-switcher logo_box">
+                            <h6>- version logo box:</h6>
+                            <div class="btn-group">
+                            <a class="btn btn-sm v1" onclick="switcher_logo('v1')">v1</a>
+                            <a class="btn btn-sm v2" onclick="switcher_logo('v2')">v2</a>
+                            </div>
+                        </div>
+                        <div class="box-switcher logo_color">
+                            <h6>- Color logo:</h6>
+                            <div class="btn-group">
+                            <a class="btn btn-sm white" onclick="switcher_logo_color('white')">white</a>
+                            <a class="btn btn-sm black" onclick="switcher_logo_color('black')">black</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading" role="tab" id="h-Menu">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#acd-switcher" href="#c-Menu" aria-controls="c-Menu">
+                            Menu
+                        </a>
+                    </h4>
+                </div>
+                <div id="c-Menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h-Menu">
+                    <div class="panel-body">
+                        <div class="box-switcher menu_text_pos">
+                            <h6>- Menu link position:</h6>
+                            <div class="btn-group">
+                                <a class="btn btn-sm menu-left" onclick="switcher_menu_text_pos('menu-left')">left</a>
+                                <a class="btn btn-sm menu-right" onclick="switcher_menu_text_pos('menu-right')">right</a>
+                                <a class="btn btn-sm menu-center" onclick="switcher_menu_text_pos('menu-center')">center</a>
+                            </div>
+                        </div>
+                        <div class="box-switcher menu_text_weight">
+                            <h6>- Menu text weight:</h6>
+                            <div class="btn-group">
+                                <a class="btn btn-sm menu-weight300" onclick="switcher_menu_text_weight('menu-weight300')">300</a>
+                                <a class="btn btn-sm menu-weight400" onclick="switcher_menu_text_weight('menu-weight400')">400</a>
+                                <a class="btn btn-sm menu-weight700" onclick="switcher_menu_text_weight('menu-weight700')">700</a>
+                                <a class="btn btn-sm menu-weight900" onclick="switcher_menu_text_weight('menu-weight900')">900</a>
+                            </div>
+                        </div>
+                        <div class="box-switcher menu_active">
+                            <h6>- Style active link:</h6>
+                            <div class="btn-group">
+                                <a class="btn btn-sm menu-active-v1" onclick="switcher_menu_activ('menu-active-v1')">v1</a>
+                                <a class="btn btn-sm menu-active-v2" onclick="switcher_menu_activ('menu-active-v2')">v2</a>
+                                <a class="btn btn-sm menu-active-v3" onclick="switcher_menu_activ('menu-active-v3')">v3</a>
+                            </div>
+                        </div>
+                        <div class="box-switcher menu_hover">
+                            <h6>- Style hover link:</h6>
+                            <div class="btn-group">
+                                <a class="btn btn-sm menu-hover-v1" onclick="switcher_menu_hover('menu-hover-v1')">v1</a>
+                                <a class="btn btn-sm menu-hover-v2" onclick="switcher_menu_hover('menu-hover-v2')">v2</a>
+                                <a class="btn btn-sm menu-hover-v3" onclick="switcher_menu_hover('menu-hover-v3')">v3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading" role="tab" id="h-SocialIcons">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#acd-switcher" href="#c-SocialIcons" aria-expanded="false" aria-controls="c-SocialIcons">
+                            Social Icons
+                        </a>
+                    </h4>
+                </div>
+                <div id="c-SocialIcons" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h-SocialIcons">
+                    <div class="panel-body">
+
+                        <div class="box-switcher socialicon">
+                            <h6>- Style icons:</h6>
+                             <div class="btn-group">
+                            <a class="btn btn-sm social-v1" onclick="switcher_socialicon('social-v1')">v1</a>
+                            <a class="btn btn-sm social-v2" onclick="switcher_socialicon('social-v2')">v2</a>
+                            <a class="btn btn-sm social-v3" onclick="switcher_socialicon('social-v3')">v3</a>
+                             </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading" role="tab" id="h-PageAnimate">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#acd-switcher" href="#c-PageAnimate" aria-expanded="false" aria-controls="c-PageAnimate">
+                            Page Transitions
+                        </a>
+                    </h4>
+                </div>
+                <div id="c-PageAnimate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h-PageAnimate">
+                    <div class="panel-body">
+
+                        <div class="box-switcher">
+                            <h6>- Animation effect</h6>
+                            <form>
+                                <select class="form-control page-transitions">
+                                    <option selected="selected">select</option>
+                                    <optgroup label="MOVE">  
+                                        <option value="1">Move to left/ from right</option>
+                                        <option value="2">Move to right/ from left</option>
+                                        <option value="3">Move to top/ from bottom</option>
+                                        <option value="4">Move to bottom/ from top</option>
+                                    </optgroup>
+                                    <optgroup label="FADE">  
+                                        <option value="5">Fade / from right</option>
+                                        <option value="6">Fade / from left</option>
+                                        <option value="7">Fade / from bottom</option>
+                                        <option value="8">Fade / from top</option>
+                                        <option value="9">Fade left / Fade right</option>
+                                        <option value="10">Fade right / Fade left</option>
+                                        <option value="11">Fade top / Fade bottom</option>
+                                        <option value="12">Fade bottom / Fade top</option> 
+                                    </optgroup>
+                                    <optgroup label="DIFFERENT EASING">  
+                                        <option value="13">Different easing / from right</option>
+                                        <option value="14">Different easing / from left</option>
+                                        <option value="15">Different easing / from bottom</option>
+                                        <option value="16">Different easing / from top</option>
+                                    </optgroup>
+                                    <optgroup label="SCALE">  
+                                        <option value="17">Scale down / from right</option>
+                                        <option value="18">Scale down / from left</option>
+                                        <option value="19">Scale down / from bottom</option>
+                                        <option value="20">Scale down / from top</option>
+                                        <option value="21">Scale down / scale down</option>
+                                        <option value="22">Scale up / scale up</option>
+                                        <option value="23">Move to left / scale up</option>
+                                        <option value="24">Move to right / scale up</option>
+                                        <option value="25">Move to top / scale up</option>
+                                        <option value="26">Move to bottom / scale up</option>
+                                        <option value="27">Scale down / scale up</option>
+                                    </optgroup>
+                                    <optgroup label="ROTATE GLUE">  
+                                        <option value="28">Glue left / from right</option>
+                                        <option value="29">Glue right / from left</option>
+                                        <option value="30">Glue bottom / from top</option>
+                                        <option value="31">Glue top / from bottom</option>
+                                    </optgroup>
+                                    <optgroup label="ROTATE FLIP">  
+                                        <option value="32">Flip right</option>
+                                        <option value="33">Flip left</option>
+                                        <option value="34">Flip top</option>
+                                        <option value="35">Flip bottom</option>
+                                    </optgroup>
+                                    <option value="36">Fall</option>
+                                    <option value="37">Newspaper</option>
+                                    <optgroup label="ROTATE PUSH/PULL">  
+                                        <option value="38">Push left / from right</option>
+                                        <option value="39">Push right / from left</option>
+                                        <option value="40">Push top / from bottom</option>
+                                        <option value="41">Push bottom / from top</option>
+                                        <option value="42">Push left / pull right</option>
+                                        <option value="43">Push right / pull left</option>
+                                        <option value="44">Push top / pull bottom</option>
+                                        <option value="45">Push bottom / pull top</option>
+                                    </optgroup>
+                                    <optgroup label="ROTATE FOLD/UNFOLD">  
+                                        <option value="46">Fold left / from right</option>
+                                        <option value="47">Fold right / from left</option>
+                                        <option value="48">Fold top / from bottom</option>
+                                        <option value="49">Fold bottom / from top</option>
+                                        <option value="50">Move to right / unfold left</option>
+                                        <option value="51">Move to left / unfold right</option>
+                                        <option value="52">Move to bottom / unfold top</option>
+                                        <option value="53">Move to top / unfold bottom</option>
+                                    </optgroup>
+                                    <optgroup label="ROTATE ROOM">  
+
+                                        <option value="54">Room to left</option>
+                                        <option value="55">Room to right</option>
+                                        <option value="56">Room to top</option>
+                                        <option value="57">Room to bottom</option>
+                                    </optgroup>
+                                    <optgroup label="ROTATE CUBE">  
+                                        <option value="58">Cube to left</option>
+                                        <option value="59">Cube to right</option>
+                                        <option value="60">Cube to top</option>
+                                        <option value="61">Cube to bottom</option>
+                                    </optgroup>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="box-switcher pt-autonext">
+                            <h6>- Auto Next Animation</h6>
+                            <div class="btn-group">
+                                <a class="btn btn-sm active true" onclick="switcher_pt_autonext('true')">on</a>
+                                <a class="btn btn-sm false" onclick="switcher_pt_autonext('false')">off</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading" role="tab" id="h-portfolio">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#acd-switcher" href="#c-portfolio" aria-expanded="false" aria-controls="c-portfolio">
+                            PORTFOLIO
+                        </a>
+                    </h4>
+                </div>
+                <div id="c-portfolio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h-portfolio">
+                    <div class="panel-body">
+                        <p>Options to subpage portfolio.</p>
+
+                        <div class="box-switcher portfolio-hover">
+                            <h6>- version hover style:</h6>
+                            <div class="btn-group">
+                            <a class="btn btn-sm hover-v1" onclick="switcher_pf_hover('hover-v1')">v1</a>
+                            <a class="btn btn-sm hover-v2" onclick="switcher_pf_hover('hover-v2')">v2</a>
+                            </div> 
+                             <h6>- hover bg color:</h6>
+                            <div class="btn-group portfolio-hover2">
+                            <a class="btn btn-sm hover-black" onclick="switcher_pf_hover2('hover-black')">black</a>
+                            <a class="btn btn-sm hover-white" onclick="switcher_pf_hover2('hover-white')">white</a>
+                            <a class="btn btn-sm hover-default" onclick="switcher_pf_hover2('hover-default')">default</a>
+                            </div> 
+                            <h6>- hover scale effect:</h6>
+                            <div class="btn-group portfolio-hover3">
+                            <a class="btn btn-sm hover-noscale" onclick="switcher_pf_hover3('hover-noscale')">no</a>
+                            <a class="btn btn-sm hover-scale" onclick="switcher_pf_hover3('hover-scale')">yes</a>
+                            </div> 
+                        </div>
+                        
+                        <div class="box-switcher portfolio-margin">
+                            <h6>- Colums margin:</h6>
+                            <form>
+                                <select class="form-control pf-margin">
+                                    <option selected="selected">select</option>
+                                    <option value="portfolio-nopadding">0px</option>
+                                    <option value="portfolio-padding1">1px</option>
+                                    <option value="portfolio-padding2">2px</option>
+                                    <option value="portfolio-padding3">3px</option>
+                                    <option value="portfolio-padding4">4px</option>
+                                    <option value="portfolio-padding5">5px</option>
+                                    <option value="portfolio-padding6">6px</option>
+                                    <option value="portfolio-padding8">8px</option>
+                                    <option value="portfolio-padding10">10px</option>
+                                    <option value="portfolio-padding15">15px</option>
+                                    <option value="portfolio-padding20">20px</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                </div>
+            </div>
+            </div>    
+            <div class="panel">
+                <div class="panel-heading" role="tab" id="h-DemoPage">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#acd-switcher" href="#c-DemoPage" aria-expanded="false" aria-controls="c-DemoPage">
+                            Demo Page
+                        </a>
+                    </h4>
+                </div>
+                <div id="c-DemoPage" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="h-DemoPage">
+                    <div class="panel-body">
+
+                        <div class="box-switcher box-demopage">
+                            <h6>fullscreen image</h6>
+                            <a href="http://themes.ht2.pl/euforia/assets/style-switcher/index.html">
+                                <img src="style-switcher_archivos/1.html" class="img-responsive" alt="demo 1">
+                            </a>
+                        </div>
+                        <div class="box-switcher box-demopage">
+                            <h6>portfolio grid</h6>
+                            <a href="http://themes.ht2.pl/euforia/assets/style-switcher/index-portfolio.html">
+                                <img src="style-switcher_archivos/portfolio1.html" class="img-responsive" alt="demo 2">
+                            </a>
+                        </div>
+                        <div class="box-switcher box-demopage">
+                            <h6>portfolio masonry <span class="label label-danger">New</span></h6>
+                            <a href="http://themes.ht2.pl/euforia/assets/style-switcher/index-portfolio2.html">
+                                <img src="style-switcher_archivos/portfolio2.html" class="img-responsive" alt="demo 2">
+                            </a>
+                        </div>
+                        <div class="box-switcher box-demopage">
+                            <h6>fullscreen video</h6>
+                            <a href="http://themes.ht2.pl/euforia/assets/style-switcher/index-video.html">
+                                <img src="style-switcher_archivos/video1.html" class="img-responsive" alt="demo 3">
+                            </a>
+                        </div> 
+                        <div class="box-switcher box-demopage">
+                            <h6>fullscreen video youtube</h6>
+                            <a href="http://themes.ht2.pl/euforia/assets/style-switcher/index-video2.html">
+                                <img src="style-switcher_archivos/video2.html" class="img-responsive" alt="demo 4">
+                            </a>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- end: THEME OPTIONS  --></body></html>
